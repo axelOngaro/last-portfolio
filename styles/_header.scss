@@ -1,0 +1,29 @@
+.header {
+  color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em 0;
+  font-family: 'Almarena-Display-Regular', sans-serif;
+  p {
+    font-size: 3.2rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    font-size: 1.8rem;
+
+    &__list {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }
+}
+
+.blog__link {
+  margin-left: 2em;
+}

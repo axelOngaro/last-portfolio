@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="Header">
+    <header className="header">
       <Link href="/">
         <a>
           <p>axel ongaro</p>
@@ -32,10 +32,10 @@ export default function Header() {
             </Link>
           </li>
         </ul>
+        <a href="http://www.google.com" target="_blank" className="blog__link">
+          blog
+        </a>
       </nav>
-      <a href="http://www.google.com" target="_blank">
-        blog
-      </a>
     </header>
   );
 }

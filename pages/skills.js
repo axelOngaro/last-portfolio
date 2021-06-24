@@ -1,6 +1,9 @@
+import Header from '../components/Header';
+
 export default function Skills() {
   return (
-    <div>
+    <div className="document">
+      <Header />
       <h1>Skills page</h1>
     </div>
   );
