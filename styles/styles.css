@@ -132,4 +132,101 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.main__skills {
+  padding: 0;
+}
+
+.main__skills__technical {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__skills__technical__field {
+  font-size: 2rem;
+  font-family: 'Almarena-Display-Regular';
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+  position: relative;
+}
+
+.main__skills__technical__field::before {
+  content: 'content';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main__skills__technical__field p {
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  opacity: 0;
+}
+
+.main__skills__technical__field:hover {
+  background-color: red;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+.main__skills__technical__field:hover::before {
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  opacity: 0;
+}
+
+.main__skills__technical__field:hover p {
+  opacity: 1;
+  -webkit-transition: ease-out opacity 2s;
+  transition: ease-out opacity 2s;
+}
+
+.frontend::before {
+  content: 'Frontend';
+}
+
+.backend::before {
+  content: 'Backend';
+}
+
+.languages::before {
+  content: 'Languages';
+}
+
+.devops::before {
+  content: 'DevOps';
+}
+
+.header__wrapper {
+  padding: 0 10em;
+}
 /*# sourceMappingURL=styles.css.map */
