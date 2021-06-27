@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 export default function Home() {
   return (
     <div className="document">
-      <Header />
       <main className="home__main">
         <motion.div
           className="home__text"

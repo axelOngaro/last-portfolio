@@ -2,7 +2,6 @@ import Header from '../components/Header';
 export default function About() {
   return (
     <div className="document">
-      <Header />
       <main className="about__main">
         <aside>
           <figure>coucou</figure>

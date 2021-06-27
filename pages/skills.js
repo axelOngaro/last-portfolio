@@ -4,9 +4,6 @@ import { motion } from 'framer-motion';
 export default function Skills() {
   return (
     <div className="skills__page">
-      <div className="header__wrapper">
-        <Header className="document" />
-      </div>
       <main className="main__skills">
         <div className="technical__skills__intro">
           <h2 className="technical__skills__intro__title">Technical skills</h2>
