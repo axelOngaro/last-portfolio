@@ -1,3 +1,51 @@
+.skills__page {
+  background-color: rgb(247, 244, 244);
+}
+
+.softskills__intro,
+.technical__skills__intro,
+.learning__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-size: 7rem;
+    padding: 0.5em 0;
+    font-weight: 400;
+    font-family: 'Almarena-Display-Regular', sans-serif;
+    text-align: center;
+  }
+
+  &__text {
+    width: 50%;
+    font-size: 3rem;
+    padding: 1em 0;
+    text-align: center;
+  }
+}
+
+.softskills__intro,
+.learning__intro {
+  margin-top: 10%;
+}
+
+.learning__section,
+.softskills__section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  &__field {
+    font-size: 4rem;
+    font-family: 'Almarena-Display-Regular';
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: ease-in 0.5s;
+    position: relative;
+  }
+}
+
 .main__skills {
   padding: 0;
   &__technical {
@@ -6,7 +54,7 @@
     flex-direction: column;
 
     &__field {
-      font-size: 2rem;
+      font-size: 4rem;
       font-family: 'Almarena-Display-Regular';
       flex-grow: 1;
       display: flex;
@@ -31,8 +79,9 @@
         opacity: 0;
       }
       &:hover {
-        background-color: red;
-        transition: ease-in 1s;
+        background-color: #922029;
+        color: rgb(247, 244, 244);
+        transition: ease-in 0.5s;
         &::before {
           transition: ease-out 0.2s;
           opacity: 0;

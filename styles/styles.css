@@ -43,11 +43,19 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
 .blog__link {
   margin-left: 2em;
+}
+
+.active {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .home__main {
@@ -134,6 +142,82 @@
   text-align: center;
 }
 
+.skills__page {
+  background-color: #f7f4f4;
+}
+
+.softskills__intro,
+.technical__skills__intro,
+.learning__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.softskills__intro__title,
+.technical__skills__intro__title,
+.learning__intro__title {
+  font-size: 7rem;
+  padding: 0.5em 0;
+  font-weight: 400;
+  font-family: 'Almarena-Display-Regular', sans-serif;
+  text-align: center;
+}
+
+.softskills__intro__text,
+.technical__skills__intro__text,
+.learning__intro__text {
+  width: 50%;
+  font-size: 3rem;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.softskills__intro,
+.learning__intro {
+  margin-top: 10%;
+}
+
+.learning__section,
+.softskills__section {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.learning__section__field,
+.softskills__section__field {
+  font-size: 4rem;
+  font-family: 'Almarena-Display-Regular';
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+  position: relative;
+}
+
 .main__skills {
   padding: 0;
 }
@@ -150,7 +234,7 @@
 }
 
 .main__skills__technical__field {
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: 'Almarena-Display-Regular';
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -194,9 +278,10 @@
 }
 
 .main__skills__technical__field:hover {
-  background-color: red;
-  -webkit-transition: ease-in 1s;
-  transition: ease-in 1s;
+  background-color: #922029;
+  color: #f7f4f4;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
 }
 
 .main__skills__technical__field:hover::before {
@@ -229,5 +314,56 @@
 
 .header__wrapper {
   padding: 0 10em;
+}
+
+.work__main {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work__main .wip {
+  font-size: 7rem;
+  font-weight: 400;
+  font-family: 'Almarena-Display-Regular', sans-serif;
+}
+
+.about__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  margin-top: 20vh;
+}
+
+.about__main aside {
+  width: 40vw;
+}
+
+.about__main .about__section {
+  width: 25vw;
+}
+
+.about__main .about__section__intro {
+  font-size: 3rem;
+}
+
+.about__main .about__section__intro__hello {
+  font-weight: bold;
+}
+
+.about__main .about__section__intro__presentation {
+  padding: 1em 0;
+}
+
+.about__main .about__section__content p {
+  padding: 1em 0;
 }
 /*# sourceMappingURL=styles.css.map */

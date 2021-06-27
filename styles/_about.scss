@@ -1,0 +1,25 @@
+.about__main {
+  display: flex;
+  font-size: 2rem;
+  margin-top: 20vh;
+  aside {
+    width: 40vw;
+  }
+  .about__section {
+    width: 25vw;
+    &__intro {
+      font-size: 3rem;
+      &__hello {
+        font-weight: bold;
+      }
+      &__presentation {
+        padding: 1em 0;
+      }
+    }
+    &__content {
+      p {
+        padding: 1em 0;
+      }
+    }
+  }
+}

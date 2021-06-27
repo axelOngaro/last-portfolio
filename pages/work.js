@@ -4,7 +4,9 @@ export default function Work() {
   return (
     <div className="document">
       <Header />
-      <h1>Work page</h1>
+      <main className="work__main">
+        <h2 className="wip"> Work in progress....</h2>
+      </main>
     </div>
   );
 }
