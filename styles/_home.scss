@@ -5,11 +5,10 @@
   .home__text {
     width: 50%;
     height: 100%;
-
     &__intro {
       font-family: 'Almarena-Display-regular';
       font-size: 6rem;
-      margin-top: 2em;
+      margin-top: 3em;
     }
     &__presentation {
       font-size: 2.4rem;
@@ -29,6 +28,7 @@
 }
 .home__illustration {
   width: 50%;
+  margin-top: 3em;
   // display: flex;
   // justify-content: center;
   // align-items: center;

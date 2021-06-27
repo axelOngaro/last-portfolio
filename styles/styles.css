@@ -7,6 +7,9 @@
 }
 
 .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +77,7 @@
 .home__main .home__text__intro {
   font-family: 'Almarena-Display-regular';
   font-size: 6rem;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .home__main .home__text__presentation {
@@ -94,6 +97,7 @@
 
 .home__illustration {
   width: 50%;
+  margin-top: 3em;
 }
 
 .contact__page {
@@ -147,12 +151,19 @@
 }
 
 .skills__page {
-  background-color: #f7f4f4;
+  background-color: #f4f7f7;
+}
+
+.header__wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .softskills__intro,
 .technical__skills__intro,
-.learning__intro {
+.learning__intro,
+.process__intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,11 +174,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #a1ffff 11.3%, #06ffff 41.2%, #00d8d8 77.8%);
 }
 
 .softskills__intro__title,
 .technical__skills__intro__title,
-.learning__intro__title {
+.learning__intro__title,
+.process__intro__title {
   font-size: 7rem;
   padding: 0.5em 0;
   font-weight: 400;
@@ -177,7 +190,8 @@
 
 .softskills__intro__text,
 .technical__skills__intro__text,
-.learning__intro__text {
+.learning__intro__text,
+.process__intro__text {
   width: 50%;
   font-size: 3rem;
   padding: 1em 0;
@@ -185,7 +199,8 @@
 }
 
 .softskills__intro,
-.learning__intro {
+.learning__intro,
+.process__intro {
   margin-top: 10%;
 }
 
@@ -308,6 +323,10 @@
   content: 'Backend';
 }
 
+.database::before {
+  content: 'Database';
+}
+
 .languages::before {
   content: 'Languages';
 }
@@ -344,7 +363,7 @@
   display: -ms-flexbox;
   display: flex;
   font-size: 2rem;
-  margin-top: 20vh;
+  padding-top: 20vh;
 }
 
 .about__main aside {

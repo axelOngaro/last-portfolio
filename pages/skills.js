@@ -26,6 +26,10 @@ export default function Skills() {
             <p>Node + express</p>
             <p>Prismic + Strapi</p>
           </div>
+          <div className="main__skills__technical__field database">
+            <p>MongoDB</p>
+            <p>PostgreSQL + MySQL</p>
+          </div>
           <div className="main__skills__technical__field languages">
             <p>Javascript + Typescript</p>
             <p>Python</p>
@@ -34,6 +38,15 @@ export default function Skills() {
             <p>Docker</p>
             <p>AWS</p>
           </div>
+        </section>
+        <div className="process__intro">
+          <h2 className="process__intro__title">My work process</h2>
+          <p className="process__intro__text">
+            This is my approach and workflow on the projects I work on.
+          </p>
+        </div>
+        <section className="process_section">
+          <p>coucou</p>
         </section>
         <div className="softskills__intro">
           <h2 className="softskills__intro__title">Soft skills</h2>
@@ -60,6 +73,7 @@ export default function Skills() {
         <section className="learning__section">
           <div className="learning__section__field">
             <p>angular</p>
+            <p>webgl/threejs</p>
           </div>
           <div className="learning__section__field">
             <p>Django</p>
