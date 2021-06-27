@@ -1,4 +1,5 @@
 import Header from '../components/Header';
+import { motion } from 'framer-motion';
 
 export default function Skills() {
   return (
@@ -12,7 +13,7 @@ export default function Skills() {
           <p className="technical__skills__intro__text">
             Here is a list of my favorite technologies to use. I'm familiar with a wide
             range of other technologies but I've put here the one I master and enjoy the
-            most.
+            most at the moment.
           </p>
         </div>
 
