@@ -55,10 +55,12 @@ export default function Skills() {
           </p>
         </div>
         <section className="softskills__section">
-          <div className="softskills__section__field">
+          <div className="softskills__section__field team">
             <p>Agile</p>
           </div>
-          <div className="softskills__section__field">Blogging</div>
+          <div className="softskills__section__field communication">
+            <p>Blogging</p>
+          </div>
         </section>
         <div className="learning__intro">
           <h2 className="learning__intro__title">Currently learning</h2>
@@ -69,17 +71,17 @@ export default function Skills() {
           </p>
         </div>
         <section className="learning__section">
-          <div className="learning__section__field">
+          <div className="learning__section__field frontend">
             <p>angular</p>
             <p>webgl/threejs</p>
           </div>
-          <div className="learning__section__field">
+          <div className="learning__section__field backend">
             <p>Django</p>
           </div>
-          <div className="learning__section__field">
+          <div className="learning__section__field languages">
             <p>Golang</p>
           </div>
-          <div className="learning__section__field">
+          <div className="learning__section__field devops">
             <p>Kubernetes</p>
           </div>
         </section>

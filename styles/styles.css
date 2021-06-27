@@ -24,7 +24,7 @@
   width: 100%;
   padding: 1em 0;
   font-family: 'Almarena-Display-Regular', sans-serif;
-  padding: 0 8em;
+  padding: 2em 8em;
 }
 
 .header p {
@@ -103,7 +103,7 @@
 }
 
 .contact__page {
-  height: 100vh;
+  max-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,17 +152,6 @@
   text-align: center;
 }
 
-.skills__page {
-  background-color: #fff2f2;
-  color: black;
-}
-
-.header__wrapper {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 .softskills__intro,
 .technical__skills__intro,
 .learning__intro,
@@ -207,7 +196,8 @@
 }
 
 .learning__section,
-.softskills__section {
+.softskills__section,
+.main__skills__technical {
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,41 +209,7 @@
 }
 
 .learning__section__field,
-.softskills__section__field {
-  font-size: 4rem;
-  font-family: 'Almarena-Display-Regular';
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: ease-in 0.5s;
-  transition: ease-in 0.5s;
-  position: relative;
-}
-
-.main__skills {
-  padding: 0;
-}
-
-.main__skills__technical {
-  height: 120vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
+.softskills__section__field,
 .main__skills__technical__field {
   font-size: 4rem;
   font-family: 'Almarena-Display-Regular';
@@ -274,6 +230,41 @@
   position: relative;
 }
 
+.learning__section__field p,
+.softskills__section__field p,
+.main__skills__technical__field p {
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  opacity: 0;
+}
+
+.learning__section__field:hover,
+.softskills__section__field:hover,
+.main__skills__technical__field:hover {
+  background-color: #771212;
+  color: white;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+}
+
+.learning__section__field:hover::before,
+.softskills__section__field:hover::before,
+.main__skills__technical__field:hover::before {
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  opacity: 0;
+}
+
+.learning__section__field:hover p,
+.softskills__section__field:hover p,
+.main__skills__technical__field:hover p {
+  opacity: 1;
+  -webkit-transition: ease-out opacity 2s;
+  transition: ease-out opacity 2s;
+}
+
+.learning__section__field::before,
+.softskills__section__field::before,
 .main__skills__technical__field::before {
   content: 'content';
   font-size: 15rem;
@@ -291,29 +282,19 @@
   transition: 1s;
 }
 
-.main__skills__technical__field p {
-  -webkit-transition: ease-in 0.2s;
-  transition: ease-in 0.2s;
-  opacity: 0;
+.main__skills {
+  padding: 0;
 }
 
-.main__skills__technical__field:hover {
-  background-color: #771212;
-  color: white;
-  -webkit-transition: ease-in 0.5s;
-  transition: ease-in 0.5s;
-}
-
-.main__skills__technical__field:hover::before {
-  -webkit-transition: ease-out 0.2s;
-  transition: ease-out 0.2s;
-  opacity: 0;
-}
-
-.main__skills__technical__field:hover p {
-  opacity: 1;
-  -webkit-transition: ease-out opacity 2s;
-  transition: ease-out opacity 2s;
+.main__skills__technical {
+  height: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .frontend::before {
@@ -334,6 +315,14 @@
 
 .devops::before {
   content: 'DevOps →';
+}
+
+.team::before {
+  content: 'Teamwork →';
+}
+
+.communication::before {
+  content: 'Communication →';
 }
 
 .header__wrapper {
