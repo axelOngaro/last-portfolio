@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -20,7 +21,14 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <div className="home__illustration"></div>
+        <div className="home__illustration">
+          <Image
+            src="/undraw_Operating_system_re_iqsc.svg"
+            height={430}
+            width={450}
+            layout="responsive"
+          />
+        </div>
       </main>
     </div>
   );

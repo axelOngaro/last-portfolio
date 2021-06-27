@@ -8,16 +8,16 @@ export default function Contact() {
         <p className="contact__mail">axel.ongaro.pro@gmail.com</p>
         <ul className="contact__list">
           <a href="https://www.google.com" target="_blank">
-            <li className="contact__list__item">GITHUB</li>
+            <li className="contact__list__item animated_link">GITHUB</li>
           </a>
           <a href="https://www.google.com" target="_blank">
-            <li className="contact__list__item">LINKEDIN</li>
+            <li className="contact__list__item animated_link">LINKEDIN</li>
           </a>
           <a href="https://www.google.com" target="_blank">
-            <li className="contact__list__item">TWITTER</li>
+            <li className="contact__list__item animated_link">TWITTER</li>
           </a>
           <a href="https://www.google.com" target="_blank">
-            <li className="contact__list__item">MEDIUM</li>
+            <li className="contact__list__item animated_link">MEDIUM</li>
           </a>
         </ul>
       </main>
