@@ -14,6 +14,17 @@ export default function Header() {
       <nav className="header__nav">
         <ul className="header__nav__list">
           <li className="header__nav__list__item">
+            <Link href="/">
+              <a
+                className={
+                  router.pathname == '/' ? 'active animated_link' : 'animated_link'
+                }
+              >
+                home
+              </a>
+            </Link>
+          </li>
+          <li className="header__nav__list__item">
             <Link href="/about">
               <a
                 className={

@@ -49,25 +49,37 @@ export default function Skills() {
         <div className="softskills__intro">
           <h2 className="softskills__intro__title">Soft skills</h2>
           <p className="softskills__intro__text">
-            Here is a list of the soft skills. Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Illum ipsum quam mollitia ipsam totam id alias repellat ex
-            quod repudiandae.
+            These skills are not necessarily technology oriented, but I found them very
+            valuable, and worth mentioning. These are critical skills in regard of
+            teamwork.
           </p>
         </div>
         <section className="softskills__section">
           <div className="softskills__section__field team">
             <p>Agile</p>
+            <p>Pair programming + code reviews</p>
+          </div>
+          <div className="softskills__section__field tools">
+            <p>Git+Github</p>
+            <p>VScode</p>
+            <p>Figma</p>
           </div>
           <div className="softskills__section__field communication">
+            <p>Fluent English</p>
             <p>Blogging</p>
+          </div>
+          <div className="softskills__section__field mindset">
+            <p>Adaptability</p>
+            <p>Cooperation</p>
+            <p>Constant learning</p>
+            <p>Critical thinking</p>
           </div>
         </section>
         <div className="learning__intro">
           <h2 className="learning__intro__title">Currently learning</h2>
           <p className="learning__intro__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, neque vel
-            esse molestias magnam ducimus nisi excepturi maxime voluptatibus. Nihil
-            impedit libero exercitationem sapiente placeat.
+            Finally, the list of the technologies I'm the most interested in learning at
+            the moment.
           </p>
         </div>
         <section className="learning__section">
@@ -83,6 +95,9 @@ export default function Skills() {
           </div>
           <div className="learning__section__field devops">
             <p>Kubernetes</p>
+          </div>
+          <div className="learning__section__field design">
+            <p>Motion Design</p>
           </div>
         </section>
       </main>

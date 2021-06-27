@@ -11,6 +11,7 @@
 .header {
   position: -webkit-sticky;
   position: sticky;
+  z-index: 1000;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,13 +54,17 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  border-right: black solid 1.8px;
 }
 
 .blog__link {
   margin-left: 2em;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .active {
+  color: #0202a1;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -185,7 +190,7 @@
 .process__intro__text {
   width: 50%;
   font-size: 3rem;
-  padding: 1em 0;
+  padding: 2em 0;
   text-align: center;
 }
 
@@ -325,8 +330,25 @@
   content: 'Communication →';
 }
 
+.tools::before {
+  content: 'Tools →';
+}
+
+.mindset::before {
+  content: 'Mindset →';
+}
+
+.design::before {
+  content: 'Design →';
+}
+
 .header__wrapper {
   padding: 0 10em;
+}
+
+.learning__section {
+  margin-bottom: 6vh;
+  min-height: 120vh;
 }
 
 .work__main {
