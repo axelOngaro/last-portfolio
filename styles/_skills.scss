@@ -1,5 +1,6 @@
 .skills__page {
-  background-color: rgb(244, 247, 247);
+  background-color: rgb(255, 242, 242);
+  color: black;
 }
 .header__wrapper {
   position: sticky;
@@ -13,12 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(161, 255, 255, 1) 11.3%,
-    rgba(6, 255, 255, 1) 41.2%,
-    rgba(0, 216, 216, 1) 77.8%
-  );
+
   &__title {
     font-size: 7rem;
     padding: 0.5em 0;
@@ -91,8 +87,8 @@
         opacity: 0;
       }
       &:hover {
-        background-color: #922029;
-        color: rgb(247, 244, 244);
+        background-color: rgb(119, 18, 18);
+        color: black;
         transition: ease-in 0.5s;
         &::before {
           transition: ease-out 0.2s;

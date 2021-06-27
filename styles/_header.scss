@@ -14,8 +14,8 @@
   &__nav {
     display: flex;
     align-items: center;
-    width: 40vw;
-    font-size: 1.8rem;
+    width: 30vw;
+    font-size: 1.5rem;
 
     &__list {
       display: flex;
@@ -32,6 +32,6 @@
 
 .active {
   // color: red;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }

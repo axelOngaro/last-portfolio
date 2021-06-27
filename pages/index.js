@@ -2,13 +2,31 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
     <div className="document">
       <Header />
       <main className="home__main">
-        <div className="home__text">
+        <motion.div
+          className="home__text"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.4,
+              },
+            },
+          }}
+        >
           <p className="home__text__intro">
             Creative and Technical skills to solve your problems
           </p>
@@ -20,7 +38,7 @@ export default function Home() {
               <button className="home__button">HIRE ME</button>
             </a>
           </Link>
-        </div>
+        </motion.div>
         <div className="home__illustration">
           <Image
             src="/undraw_Operating_system_re_iqsc.svg"

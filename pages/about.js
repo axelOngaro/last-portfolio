@@ -9,11 +9,15 @@ export default function About() {
         </aside>
         <section className="about__section">
           <div className="about__section__intro">
-            <p className="about__section__intro__hello">Hi there</p>
+            <p className="about__section__intro__hello">Hi there ✌️!</p>
             <p className="about__section__intro__presentation">
-              I'm a Full stack developer and UI designer from Toulouse, France.
-              <br /> I'm focused on well architected applications, simple interface, with
-              easily scalable and maintanable code.
+              I'm a <strong>Full stack developer</strong> and <strong>UI designer</strong>{' '}
+              from
+              <em> Toulouse, France.</em>
+            </p>
+            <p>
+              I'm focused on well architected applications, simple interface, with easily
+              scalable and maintanable code.
             </p>
           </div>
           <div className="about__section__content">
